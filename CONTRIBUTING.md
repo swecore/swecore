@@ -1,26 +1,37 @@
-# Contributing
+# Contribution Boundary
 
-Public feedback and documentation corrections are welcome.
+This repository is not an open-source contribution surface.
 
-## What to submit
+SWECore is a proprietary, closed commercial product. This public repository is a
+product showcase and documentation entry point only.
 
-- Clear docs corrections.
-- Public-safe feedback about positioning, workflow, or trust boundaries.
-- Suggestions that preserve the early-access claim boundary.
+## What is welcome
 
-## What not to submit
+- Public-safe documentation corrections.
+- Public-safe feedback about positioning, workflow, trust boundaries, or early
+  access clarity.
+- Issue reports that do not include private or sensitive material.
+
+## What is not accepted here
+
+- Runtime or product source-code contributions.
+- Private project source code.
+- Commercial runtime internals.
+- Product pack or enterprise control-plane contributions.
+- Unsupported production, security, compliance, or enterprise-readiness claims.
+
+## Do not submit sensitive data
 
 Do not submit secrets, customer data, private repository URLs, source code from
-private projects, logs, tokens, credentials, or confidential data.
+private projects, logs, tokens, credentials, production logs, or confidential
+data.
 
-Do not add unsupported production, security, or compliance claims.
-
-## Repository boundary
-
-This repository is not the full runtime contribution surface. It is a public
-product showcase and documentation entry point.
+## Product interest
 
 For product interest, use the
 [early-access waitlist](https://swecore.dev/early-access).
 
-For security issues, email [security@swecore.dev](mailto:security@swecore.dev).
+## Security issues
+
+Do not file sensitive vulnerabilities as public GitHub issues. Email
+[security@swecore.dev](mailto:security@swecore.dev).
