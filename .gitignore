@@ -1,0 +1,18 @@
+# Local environment and secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local editor and OS files
+.DS_Store
+.vscode/
+.idea/
+
+# Local runtime/cache output
+.cache/
+.tmp/
+tmp/
+node_modules/

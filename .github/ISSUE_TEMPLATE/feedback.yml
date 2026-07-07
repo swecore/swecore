@@ -1,0 +1,58 @@
+name: Product feedback
+description: Share public-safe SWECore workflow feedback.
+title: "Feedback: "
+labels: [feedback]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Do not include source code, secrets, private repo URLs, customer data,
+        production logs, tokens, or confidential information.
+  - type: input
+    id: workflow
+    attributes:
+      label: Workflow to govern
+      description: What workflow would you want SWECore to help govern?
+      placeholder: "Example: AI-assisted pull request review"
+    validations:
+      required: true
+  - type: checkboxes
+    id: tools
+    attributes:
+      label: Tools used
+      options:
+        - label: Cursor
+        - label: Windsurf
+        - label: Claude Code
+        - label: Codex
+        - label: GitHub Copilot
+        - label: Cline
+        - label: Aider
+        - label: OpenCode
+        - label: Lovable
+        - label: Other
+  - type: dropdown
+    id: segment
+    attributes:
+      label: Segment
+      options:
+        - Solo Pro / solo technical founder
+        - Team
+        - Business
+        - Enterprise / regulated evaluator
+    validations:
+      required: true
+  - type: textarea
+    id: useful
+    attributes:
+      label: What would make this useful?
+      description: Keep it public-safe. Do not include private code or data.
+    validations:
+      required: true
+  - type: textarea
+    id: blockers
+    attributes:
+      label: Adoption blockers
+      description: What would prevent you or your team from using this?
+    validations:
+      required: false
