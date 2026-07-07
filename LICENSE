@@ -1,0 +1,24 @@
+# SWECore Proprietary License
+
+Copyright (c) 2026 SWECore. All rights reserved.
+
+This public repository is provided for informational, evaluation, and product
+showcase purposes only.
+
+No license is granted to copy, modify, distribute, sublicense, sell, host,
+operate, reverse engineer, or create derivative works from this repository or
+any SWECore commercial runtime, except where separately permitted in a written
+agreement signed by SWECore or where required by applicable law.
+
+This repository does not grant access to, rights in, or a license for the full
+SWECore commercial runtime, enterprise control plane, paid product packs,
+private implementation details, trademarks, service marks, logos, or other
+commercial assets.
+
+Public feedback, issue reports, and documentation corrections may be submitted
+through GitHub using the public repository contribution paths, but such
+submissions do not change the proprietary status of SWECore or grant additional
+rights to the repository contents.
+
+Public documentation in this repository should not be treated as legal,
+security, privacy, compliance, or production-readiness certification.

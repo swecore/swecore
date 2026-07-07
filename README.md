@@ -99,5 +99,8 @@ or sensitive implementation details.
 
 ## License
 
-No license file is currently present in this repository. Unless a license is
-added, default copyright restrictions apply.
+SWECore is proprietary. See [LICENSE](LICENSE).
+
+This public repository is provided for informational, evaluation, and product
+showcase purposes only. It does not grant a license to the full commercial
+runtime or any enterprise product surface.
