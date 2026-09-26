@@ -7,7 +7,12 @@ sensitive implementation details.
 No hosted control plane is required for the early-access demo. The demo should
 avoid any claim that the full SWECore runtime is publicly shipped.
 
-## Workflow steps
+## What can be run today
+
+The technical beta runs `init`, `doctor`, `audit`, `branch doctor` and
+`profile` locally. Steps 3–7 below are the target design, not current behaviour.
+
+## Workflow steps (target design)
 
 1. Select repo.
 2. Scan workspace.

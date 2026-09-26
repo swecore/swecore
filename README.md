@@ -7,7 +7,10 @@ SWECore helps teams and serious individual builders review AI-assisted code
 changes with visible scope, evidence, receipts, and known limits before the
 change is trusted.
 
-## What SWECore helps with
+## What SWECore is designed to help with
+
+These are design goals; the technical beta covers only the commands listed
+under "What the technical beta does today".
 
 - Scope before trust: make the intended change visible before reviewing it.
 - Evidence before claims: separate proof, warnings, and unsupported claims.
@@ -35,7 +38,9 @@ change is trusted.
 - Business: groups validating AI-code governance before broader rollout.
 - Enterprise / Regulated: roadmap-only conversation until stronger proof exists.
 
-## The review loop
+## The review loop (target design)
+
+This is the direction, not what the current build performs.
 
 1. Scope the change.
 2. Attach evidence.
@@ -43,23 +48,29 @@ change is trusted.
 4. Produce a reviewer-ready receipt.
 5. Decide next action.
 
-## Example receipt
+## What the technical beta does today
 
-```text
-Task: Add waitlist email validation.
+The current private build is an unsigned technical beta of a local command-line
+tool for Linux and macOS. It is not a public release. It runs fully offline and
+stores metadata only.
 
-Scope: Form validation and tests only.
+Does today:
 
-Changed: Validation rule and related test.
+- `swecore init`: set up repo-local `.swecore/` state and add it to `.gitignore`.
+- `swecore doctor` and `swecore audit`: check that the local state and workspace
+  lock are consistent and write a receipt. They do not inspect your code, your
+  tests or an agent's behaviour.
+- `swecore branch doctor`: read-only diagnosis of the local Git branch state.
+- `swecore profile`: store a repo-local communication profile.
+- `swecore setup codex --plan`: print a Codex MCP configuration plan.
 
-Evidence: Tests passed / or bounded warning.
+Does not do yet: apply updates or rollbacks (`update`, `rollback`, `scope`
+print `not_implemented` and exit non-zero), activate a licence, apply Codex
+configuration for you, run or gate agent work, verify what changed, sign
+packages, or support Windows.
 
-Claim boundary: Not production-ready unless production evidence exists.
-
-Reviewer next step: Inspect validation logic and run the listed test command.
-
-Not proven: Deliverability, abuse resistance, or full production readiness.
-```
+See the [sample receipt](docs/sample-receipt.md) for real output and for the
+target design the beta is heading towards.
 
 ## Early access
 
