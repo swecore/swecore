@@ -6,7 +6,8 @@ to produce later. The current build does **not** produce the target receipt.
 
 ## What the technical beta prints today
 
-Output of a real local run on Linux (paths and identifiers shortened). No code,
+Output of a real local run on Linux, trimmed to the lines that matter (the
+workspace, receipt path and claim-boundary lines are left out here). No code,
 prompt or secret is stored; receipts are metadata only.
 
 ```text

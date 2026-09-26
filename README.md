@@ -67,7 +67,8 @@ Does today:
 Does not do yet: apply updates or rollbacks (`update`, `rollback`, `scope`
 print `not_implemented` and exit non-zero), activate a licence, apply Codex
 configuration for you, run or gate agent work, verify what changed, sign
-packages, or support Windows.
+packages, or support Windows (a Windows installer is built by the project's CI
+but is not part of this beta).
 
 See the [sample receipt](docs/sample-receipt.md) for real output and for the
 target design the beta is heading towards.
